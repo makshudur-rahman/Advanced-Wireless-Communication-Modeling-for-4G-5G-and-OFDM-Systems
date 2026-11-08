@@ -1,0 +1,12 @@
+clc;
+clear;
+close;
+N_seq1 = randn(100); 
+N_seq2 = wgn(100,1,5); 
+figure,hist(N_seq1); 
+figure,hist(N_seq2); 
+x=-10:1:10; 
+n=0; 
+v=1; 
+p=30*(exp(-((x-n).^2)/2))/(v*(sqrt(2*3.14)));
+plot(x,p); 
